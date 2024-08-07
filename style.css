@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --normal_font: 'Poppins', sans-serif;
+    --thin_font: 'Playfair Display', serif;
+    --background: #f8838e;
+    --font_color: white;
+    --second_fontColor: #fcfcfc;
+    --design: #d66574;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 750px){
+ 
+::-webkit-scrollbar{
+    width: 0;
+}
+header .banner{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+header .banner h1{
+    color: var(--font_color);
+    font-family: var(--normal_font);
+    letter-spacing: 10px;
+}
+header .banner h2{
+    color: var(--second_fontColor);
+    font-family: var(--thin_font);
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+}
+header .banner .arrow-down{
+    position: absolute;
+    top: 80%;
+}
+header .banner .arrow-down i{
+    font-size: 3rem;
+    color: var(--design);
+    animation: bounce 2s infinite;
+}
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+/* Next Page */
+.nextPage .banner{
+    width: 100%;
+    height: 350vh;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nextPage .banner .frame{
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    padding: 1rem;
+    margin-bottom:  5rem;
+}
+.nextPage .banner .frame .card{
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+.nextPage .banner .frame1{
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    padding: 1rem;
+    margin-bottom:  5rem;
+}
+.nextPage .banner .frame1 .card1{
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+.nextPage .banner .frame2{
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    padding: 1rem;
+    margin-bottom:  5rem;
+}
+.nextPage .banner .frame2 .card2{
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+}
